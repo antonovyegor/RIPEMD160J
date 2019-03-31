@@ -16,18 +16,23 @@ public class Main {
             15, 5, 1, 3, 7, 14, 6, 9, 11, 8, 12, 2, 10, 0, 4, 13,
             8, 6, 4, 1, 3, 11, 15, 0, 5, 12, 2, 13, 9, 7, 10, 14,
             12, 15, 10, 4, 1, 5, 8, 7, 6, 2, 13, 14, 0, 3, 9, 11};
-    static final int s [] = {11, 14, 15, 12, 5, 8, 7, 9, 11, 13, 14, 15, 6, 7, 9, 8,
+    static final int s [] = {
+            11, 14, 15, 12, 5, 8, 7, 9, 11, 13, 14, 15, 6, 7, 9, 8,
             7, 6, 8, 13, 11, 9, 7, 15, 7, 12, 15, 9, 11, 7, 13, 12,
             11, 13, 6, 7, 14, 9, 13, 15, 14, 8, 13, 6, 5, 12, 7, 5,
             11, 12, 14, 15, 14, 15, 9, 8, 9, 14, 5, 6, 8, 6, 5, 12,
             9, 15, 5, 11, 6, 8, 13, 12, 5, 12, 13, 14, 11, 8, 5, 6};
-    static final int sshtr [] = {8, 9, 9, 11, 13, 15, 15, 5, 7, 7, 8, 11, 14, 14, 12, 6,
+    static final int sshtr [] = {
+            8, 9, 9, 11, 13, 15, 15, 5, 7, 7, 8, 11, 14, 14, 12, 6,
             9, 13, 15, 7, 12, 8, 9, 11, 7, 7, 12, 7, 6, 15, 13, 11,
             9, 7, 15, 11, 8, 6, 6, 14, 12, 13, 5, 14, 13, 13, 7, 5,
             15, 5, 8, 11, 14, 14, 6, 14, 6, 9, 12, 9, 12, 5, 15, 8,
             8, 5, 12, 9, 12, 5, 14, 6, 8, 13, 6, 5, 15, 13, 11, 11};
     public static void main (String [] args){
-        String input = "c";
+
+
+
+        String input = "a";
         System.out.println(input);
         byte [] bytes = input.getBytes();
         ArrayList<Byte> list = new ArrayList<>();
@@ -85,13 +90,13 @@ public class Main {
             UnsignedInteger D_ = h3;
             UnsignedInteger E_ = h4;
             for (int j=0; j<80;j++){
-                T=SHL((A.plus(F(j,B,C,D).plus(M[i][r[j]].plus(K(j).plus(E))))),s[j]);
+                T=SHL((A.plus(F(j,B,C,D).plus(M[i][r[j]].plus(K(j))))),s[j]).plus(E);
                 A=E;
                 E=D;
                 D=SHL(C,10);
                 C=B;
                 B=T;
-                T=SHL((A_.plus(F(79-j,B_,C_,D_).plus(M[i][rshtr[j]].plus(Ksht(j).plus(E_))))),sshtr[j]);
+                T=SHL((A_.plus(F(79-j,B_,C_,D_).plus(M[i][rshtr[j]].plus(Ksht(j))))),sshtr[j]).plus(E_);
                 A_=E_;
                 E_=D_;
                 D_=SHL(C_,10);
@@ -112,7 +117,7 @@ public class Main {
     public static UnsignedInteger SHL (UnsignedInteger N , int i){
         String str = N.toString(2);
         String left_part = str.substring(0,i);
-        String right_part = str.substring(i+1,str.length());
+        String right_part = str.substring(i,str.length());
 
         str = right_part + left_part;
 
@@ -141,7 +146,7 @@ public class Main {
 
 
         for (int i=0;i<str1.length();i++)
-            if (str1.charAt(i)=='1' || str2.charAt(i)=='1')str3.append('1');
+            if (str1.charAt(i)=='1' | str2.charAt(i)=='1') str3.append('1');
             else str3.append('0');
         return UnsignedInteger.valueOf(str3.toString(),2);
 
@@ -162,7 +167,7 @@ public class Main {
 
 
         for (int i=0;i<str1.length();i++)
-            if (str1.charAt(i)=='1' && str2.charAt(i)=='1')str3.append('1');
+            if (str1.charAt(i)=='1' & str2.charAt(i)=='1')str3.append('1');
             else str3.append('0');
         return UnsignedInteger.valueOf(str3.toString(),2);
 
@@ -185,6 +190,7 @@ public class Main {
         for (int i=0;i<str1.length();i++)
             if (str1.charAt(i)!=str2.charAt(i))str3.append('1');
             else str3.append('0');
+        UnsignedInteger u = UnsignedInteger.valueOf(str3.toString(),2);
         return UnsignedInteger.valueOf(str3.toString(),2);
 
 
@@ -206,6 +212,7 @@ public class Main {
         if(j<=79){
             return XOR(x,OR(y,NOT(z)));
         }
+        System.err.println("Error F");
         return UnsignedInteger.ZERO;
     }
 
@@ -225,6 +232,7 @@ public class Main {
         if(j<=79){
             return  UnsignedInteger.valueOf("A953FD4E",16);
         }
+        System.err.println("Error K");
         return UnsignedInteger.ZERO;
     }
     public static UnsignedInteger Ksht (int j){
@@ -243,6 +251,7 @@ public class Main {
         if(j<=79){
             return  UnsignedInteger.valueOf("00000000",16);
         }
+        System.err.println("Error Ksht");
         return UnsignedInteger.ZERO;
     }
 
