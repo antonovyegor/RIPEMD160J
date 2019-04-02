@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2d49c0a6-b6a0-4560-b0f0-c9d98b472aa2" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/guava_27_1_jre.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/guava_27_1_jre.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/RIPEMD160J/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/RIPEMD160J/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
     </list>
@@ -17,11 +19,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="37" selection-start-line="37" selection-end-line="37" />
+            <state relative-caret-position="-408">
+              <caret line="120" column="11" lean-forward="true" selection-end-line="280" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://E:/jar_files/guava-27.1-jre.jar!/com/google/common/primitives/UnsignedBytes.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="87" selection-start-line="87" selection-end-line="87" />
             </state>
           </provider>
         </entry>
@@ -55,7 +66,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -82,11 +92,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1554057492675" />
-    <property name="last_opened_file_path" value="D:/Downloads/jar_files/guava-27.1-jre.jar!/" />
+    <property name="last_opened_file_path" value="E:/jar_files/guava-27.1-jre.jar!/" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -149,7 +160,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.08237822" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19269341" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -159,7 +170,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32974428" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39973083" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.19380888" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -182,93 +193,99 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>72</line>
+          <line>86</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>117</line>
+          <line>132</line>
           <properties />
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>126</line>
+          <line>141</line>
           <properties />
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>134</line>
+          <line>149</line>
           <properties />
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>155</line>
+          <line>170</line>
           <properties />
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>176</line>
+          <line>191</line>
           <properties />
           <option name="timeStamp" value="12" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>199</line>
+          <line>214</line>
           <properties />
           <option name="timeStamp" value="13" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>219</line>
+          <line>234</line>
           <properties />
           <option name="timeStamp" value="14" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>238</line>
+          <line>253</line>
           <properties />
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>92</line>
+          <line>106</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>193</line>
+          <line>208</line>
           <properties />
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>96</line>
+          <line>110</line>
           <properties />
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>150</line>
+          <line>165</line>
           <properties />
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>171</line>
+          <line>186</line>
           <properties />
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>37</line>
+          <line>32</line>
           <properties />
-          <option name="timeStamp" value="27" />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>73</line>
+          <properties />
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -295,35 +312,9 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/libraries/guava.xml" />
-    <entry file="jar://D:/Downloads/jar_files/guava-27.1-jre.jar!/com/google/common/primitives/Bytes.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Downloads/jar_files/guava-27.1-jre.jar!/com/google/common/primitives/UnsignedLongs.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="171" selection-start-line="171" selection-end-line="171" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Downloads/jar_files/guava-27.1-jre.jar!/com/google/common/primitives/UnsignedLong.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="52" selection-start-line="52" selection-end-line="52" />
-          <folding>
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#938#939#0" expanded="true" />
-            <element signature="e#996#997#0" expanded="true" />
-            <element signature="e#1041#1042#0" expanded="true" />
-            <element signature="e#1702#1703#0" expanded="true" />
-            <element signature="e#1744#1745#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/Downloads/jar_files/guava-27.1-jre.jar!/com/google/common/primitives/Bytes.class" />
+    <entry file="jar://D:/Downloads/jar_files/guava-27.1-jre.jar!/com/google/common/primitives/UnsignedLongs.class" />
+    <entry file="jar://D:/Downloads/jar_files/guava-27.1-jre.jar!/com/google/common/primitives/UnsignedLong.class" />
     <entry file="jar://C:/Program Files/Java/jdk-11.0.1/lib/src.zip!/src/java.base/java/lang/Byte.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="489">
@@ -331,13 +322,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Downloads/jar_files/guava-27.1-jre.jar!/com/google/common/primitives/UnsignedBytes.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1309">
-          <caret line="100" selection-start-line="100" selection-end-line="100" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://D:/Downloads/jar_files/guava-27.1-jre.jar!/com/google/common/primitives/UnsignedBytes.class" />
     <entry file="file://$PROJECT_DIR$/src/RIPEMD.java">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -345,37 +330,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://D:/Downloads/jar_files/guava-27.1-jre.jar!/com/google/common/base/Preconditions.class">
+    <entry file="jar://D:/Downloads/jar_files/guava-27.1-jre.jar!/com/google/common/base/Preconditions.class" />
+    <entry file="jar://D:/Downloads/jar_files/guava-27.1-jre.jar!/com/google/common/primitives/UnsignedInts.class" />
+    <entry file="jar://D:/Downloads/jar_files/guava-27.1-jre.jar!/com/google/common/primitives/UnsignedInteger.class" />
+    <entry file="jar://E:/jar_files/guava-27.1-jre.jar!/com/google/common/primitives/UnsignedBytes.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="321" selection-start-line="321" selection-end-line="321" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Downloads/jar_files/guava-27.1-jre.jar!/com/google/common/primitives/UnsignedInts.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="172" selection-start-line="172" selection-end-line="172" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/Downloads/jar_files/guava-27.1-jre.jar!/com/google/common/primitives/UnsignedInteger.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="46" selection-start-line="46" selection-end-line="46" />
-          <folding>
-            <element signature="e#778#779#0" expanded="true" />
-            <element signature="e#817#818#0" expanded="true" />
-            <element signature="e#876#877#0" expanded="true" />
-            <element signature="e#924#925#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="118">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
+        <state relative-caret-position="-408">
+          <caret line="120" column="11" lean-forward="true" selection-end-line="280" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -1,6 +1,4 @@
 import java.util.ArrayList;
-
-
 import com.google.common.primitives.UnsignedInteger;
 import com.google.common.primitives.UnsignedBytes;
 import com.google.common.primitives.UnsignedLong;
@@ -34,8 +32,12 @@ public class Main {
 
         String input = "a";
         System.out.println(input);
+
+
         byte [] bytes = input.getBytes();
+
         ArrayList<Byte> list = new ArrayList<>();
+
         for (int i =0 ;i< bytes.length;i++)
             list.add(bytes[i]);
 
@@ -48,15 +50,26 @@ public class Main {
         int delta = 448 - mod_bits;
         if (delta<=0)  delta = 512 - mod_bits + 448;
         int add_bytes = delta/8;
+
         for (int i=0;i<add_bytes;i++){
             if (i==0)  list.add((byte)-128);
             else list.add((byte)0);
         }
-        for ( int i=0;i<input_length_bits_str.length();i+=8){
+
+
+
+        for ( int i=input_length_bits_str.length()/2;i<input_length_bits_str.length();i+=8){
             String split = input_length_bits_str.substring(i,i+8);
             byte b = UnsignedBytes.parseUnsignedByte(split,2);
             list.add(b);
         }
+        for ( int i=0;i<input_length_bits_str.length()/2;i+=8){
+            String split = input_length_bits_str.substring(i,i+8);
+            byte b = UnsignedBytes.parseUnsignedByte(split,2);
+            list.add(b);
+        }
+
+
 
         UnsignedInteger[][] M = new UnsignedInteger[list.size()*8/512][16];
         for (int i=0;i<list.size()*8/512;i++){
@@ -70,6 +83,7 @@ public class Main {
                 M[i][j]=UnsignedInteger.valueOf(sub,2);
             }
         }
+
         UnsignedInteger h0 = UnsignedInteger.valueOf("67452301",16);
         UnsignedInteger h1 = UnsignedInteger.valueOf("EFCDAB89",16);
         UnsignedInteger h2 = UnsignedInteger.valueOf("98BADCFE",16);
@@ -96,6 +110,7 @@ public class Main {
                 D=SHL(C,10);
                 C=B;
                 B=T;
+
                 T=SHL((A_.plus(F(79-j,B_,C_,D_).plus(M[i][rshtr[j]].plus(Ksht(j))))),sshtr[j]).plus(E_);
                 A_=E_;
                 E_=D_;
@@ -253,6 +268,13 @@ public class Main {
         }
         System.err.println("Error Ksht");
         return UnsignedInteger.ZERO;
+    }
+    public static byte Convert ( byte b){
+        StringBuilder str1 = new StringBuilder();
+        str1.append(UnsignedBytes.toString(b,2));
+        str1.reverse();
+        return UnsignedBytes.parseUnsignedByte(str1.toString(),2);
+
     }
 
 }
